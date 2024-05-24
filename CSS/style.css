@@ -1,0 +1,86 @@
+::selection{
+    background-color: rgb(254,194,96);
+    color: #352e28;
+    
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+#home{
+    background-color: rgb(247,236,222);
+    padding-bottom: 40px;
+}
+.home h1{
+    font-family: "Pacifico", cursive;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 50px;
+    line-height: 60px;
+    color: #352e28    ;
+    text-align: center;
+    padding : 60px;
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+}
+
+
+ h1::before{
+    content: '';
+    width: 25%;
+    height: 25%;
+    background-color: rgb(254,194,96);
+    box-sizing: border-box;
+    position: absolute;
+    top: 43%;
+    left: 38%;
+    z-index: -1;
+    transform: scaleY(0.4) translateY(50%) ;
+    transition: all 0.5s;
+}
+ h1:hover::before{
+    transform: scaleY(1) translateY(0);
+}
+
+.dotted-line{
+    position: relative;
+    width: 100%;
+    height: 2px;
+}
+.dotted-line::before{
+    content: '';
+    position: absolute;
+    top: 30%;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, black 2px, transparent 2px);
+      background-size: 4px 5px;
+}
+
+.home h3{
+    font-family: "Righteous", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 25px;
+    line-height: 30px;
+    text-align: center;
+    margin: 30px;
+    background-image : linear-gradient(to right, #3ca55c, #b5ac49);
+    background-clip : text;
+    -webkit-text-fill-color : transparent;
+}
+.form-control{
+    box-shadow: none;
+    
+}
+table th{
+    font-family: "PT Sans Caption", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #212529
+    ;
+}

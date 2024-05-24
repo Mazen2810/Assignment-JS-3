@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&display=swap" rel="stylesheet">
+    <title>Bookmarker    </title>
+    <link rel="icon" href="./bookmark-with-star-glyph-color-icon-vector-28806406.ico" type="image/png">
+</head>
+
+<body>
+<section id="home" class="home">
+    <div class="container">
+       
+            <h1>Bookmarker    </h1>
+        
+        
+        <div class="dotted-line"></div>
+        <div class="bookmark-content ">
+            <h3> <i class="fa-solid fa-bookmark"></i> <span> Bookmark your favorite sites </span> <i class="fa-solid fa-bookmark"></i></h3>
+            <div class="mb-3">
+                <label for="input1" class="form-label"><i class="fa-solid fa-book-bookmark"></i>  <strong>Site Name</strong></label>
+                <input type="email" class="form-control" id="input1" placeholder="Bookmark Name">
+              </div>
+            <div class="mb-3">
+                <label for="input2" class="form-label"><i class="fa-solid fa-link"></i>  <strong>Site URL</strong> </label>
+                <input type="email" class="form-control" id="input2" placeholder="Website URL - https:// (must)">
+              </div>
+              <div class=" button d-flex justify-content-center">
+                <button id="submitbtn" class="btn btn-danger px-5 my-3 text-center">Submit</button>
+              </div>
+              <div class="dotted-line"></div>
+              <table class="table my-4 text-center">
+                <thead>
+                  <tr class=" ">
+                    <th scope="col">Index</th>
+                    <th scope="col">Website Name	</th>
+                    <th scope="col">Visit</th>
+                    <th scope="col">Delete            </th>
+                  </tr>
+                </thead>
+                <tbody id="displayBody">
+                  
+                  
+                </tbody>
+              </table>
+        </div>
+       
+          
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="./JS/script.js"></script>
+</body>
+
+</html>
