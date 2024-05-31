@@ -27,12 +27,26 @@
         <div class="bookmark-content ">
             <h3> <i class="fa-solid fa-bookmark"></i> <span> Bookmark your favorite sites </span> <i class="fa-solid fa-bookmark"></i></h3>
             <div class="mb-3">
-                <label for="input1" class="form-label"><i class="fa-solid fa-book-bookmark"></i>  <strong>Site Name</strong></label>
-                <input type="email" class="form-control" id="input1" placeholder="Bookmark Name">
+                <label for="inputName" class="form-label"><i class="fa-solid fa-book-bookmark"></i>  <strong>Site Name</strong></label>
+                <input type="email" class="form-control inputValid" id="inputName" placeholder="Bookmark Name">
+                <div class="alert alert-danger d-none py-2 my-2">
+                  <small> Site Name is not valid, Please follow the rules below :
+                    <br>
+
+                   - Site name must contain at least 3 characters</small>
+
+                </div>
               </div>
+
             <div class="mb-3">
-                <label for="input2" class="form-label"><i class="fa-solid fa-link"></i>  <strong>Site URL</strong> </label>
-                <input type="email" class="form-control" id="input2" placeholder="Website URL - https:// (must)">
+                <label for="inputUrl" class="form-label"><i class="fa-solid fa-link"></i>  <strong>Site URL</strong> </label>
+                <input type="email" class="form-control inputValid" id="inputUrl" placeholder="Website URL - https:// (must)">
+                <div class="alert alert-danger d-none py-2 my-2">
+                  <small> Site Url is not valid, Please follow the rules below :
+                    <br>
+                    - Site URL must be a valid one</small>
+
+                </div>
               </div>
               <div class=" button d-flex justify-content-center">
                 <button id="submitbtn" class="btn btn-danger px-5 my-3 text-center">Submit</button>
